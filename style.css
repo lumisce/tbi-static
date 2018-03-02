@@ -1,0 +1,91 @@
+@font-face {
+	font-family: tbiSerif;
+	src: url(fonts/BluuNext-Bold.otf);
+}
+
+body{
+	color: #FFFFFF;
+	font-family: sans-serif;
+}
+
+img {
+	display: inline-block;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+a:visited {
+	color: #FFFFFF;
+}
+
+h1 {
+	font-family: tbiSerif;
+}
+
+footer {
+	padding: 50px 150px;
+}
+
+section {
+	padding: 100px 150px;
+}
+
+section:nth-child(1) {
+	padding: 50px 150px 150px 150px;
+	color: gray;
+}
+
+section .index {
+	
+}
+
+footer {
+	color: #56009C;
+}
+
+.black {
+	background-color: #151515
+}
+
+.green {
+	background-color: #00463B
+}
+
+.red {
+	background-color: #BB1C20;
+}
+
+.top-header {
+	margin-left: -100px;
+	position: relative;
+}
+
+.top-header nav, .top-header ul, .top-header li {
+	display: inline-block;
+}
+
+.top-header nav {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(0,-50%);
+	width: 75%;
+	font-weight: bold;
+	text-align: right;
+}
+
+.top-header li {
+	margin-left: 150px;
+	padding: 10px;
+}
+
+.launch-images img {
+	height: 300px;
+	width: 300px;
+}

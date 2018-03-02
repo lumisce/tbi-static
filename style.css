@@ -28,10 +28,6 @@ h1 {
 	font-family: tbiSerif;
 }
 
-footer {
-	padding: 50px 150px;
-}
-
 section {
 	padding: 100px 150px;
 }
@@ -47,6 +43,7 @@ section .index {
 
 footer {
 	color: #56009C;
+	padding: 50px 150px;
 }
 
 .black {
@@ -60,7 +57,7 @@ footer {
 .red {
 	background-color: #BB1C20;
 }
-
+/* ---------- top header ------------*/
 .top-header {
 	margin-left: -100px;
 	position: relative;
@@ -84,8 +81,65 @@ footer {
 	margin-left: 150px;
 	padding: 10px;
 }
+/* ---------- launch images ------------*/
+.launch-images {
+	width: 100%;
+	white-space: nowrap;
+}
 
-.launch-images img {
-	height: 300px;
-	width: 300px;
+.image-link {
+	display: inline-block;
+	width: 33%;
+	position: relative;
+}
+
+.image-link img {
+	height: 100%;
+	width: 100%;
+	opacity: 1;
+	-webkit-filter: contrast(300%);
+	filter: contrast(300%);
+	transition: .5s ease;
+	backface-visibility: hidden;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.6;
+	transition: .5s ease;
+	text-align: center;
+}
+
+.red.overlay {
+	background-color: #FF0036
+}
+
+.yellow.overlay {
+	background-color: #FFC61E
+}
+.green.overlay {
+	background-color: #00B290
+}
+
+.image-link .text {
+	color: white;
+	font-size: 2.8vw;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+	filter: drop-shadow(0 0 3px #000);
+}
+
+.image-link:hover img {
+	opacity: 0.3;
 }

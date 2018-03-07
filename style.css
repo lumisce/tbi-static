@@ -46,11 +46,6 @@ section .index {
 	
 }
 
-footer {
-	color: #56009C;
-	padding: 50px 150px;
-}
-
 .black {
 	background-color: #151515
 }
@@ -70,8 +65,12 @@ footer {
 }
 /* ---------- top header ------------*/
 .top-header {
-	margin-left: -100px;
+	margin-left: -70px;
 	position: relative;
+}
+
+.top-header img {
+	height: 130px;
 }
 
 .top-header nav, .top-header ul, .top-header li {
@@ -113,7 +112,7 @@ footer {
 	transition: .5s ease;
 }
 
-.who-we-are{
+.launch-images .who-we-are{
 	background:
 	    linear-gradient(
         rgba(255, 255, 0, 0.45), 
@@ -124,7 +123,7 @@ footer {
 	background-repeat: no-repeat;
 }
 
-.what-we-do{
+.launch-images .what-we-do{
 	background:
 	    linear-gradient(
             rgba(255, 0, 0, 0.45), 
@@ -135,7 +134,7 @@ footer {
     background-repeat: no-repeat;
 }
 
-.why-were-there{
+.launch-images .we-were-there{
 	background:
 	    linear-gradient(
             rgba(0, 255, 0, 0.45), 
@@ -197,4 +196,162 @@ footer {
 
 .image-link:hover {
 	opacity: 0.4;
+}
+
+/*Top - Footer*/
+
+.top-footer{
+	display: flex;
+	margin-top: 20px;
+}
+
+.top-footer .social-media {
+	flex: 1 0 0;
+}
+
+.top-footer .social-media ul {
+	padding: 0;
+	margin: 0;
+}
+
+.top-footer .social-media li {
+	display: inline-block;
+}
+
+.top-footer .social-media img {
+	width: 30px;
+	margin-top: 10px;
+}
+
+.top-footer .newsletter {
+	flex: 2 0 0;
+
+}
+
+.top-footer .newsletter input:first-child {
+	width: 50%;
+	height: 26px;
+
+	background-color: transparent;
+	color: white;
+	border: none;
+	border-bottom: 1px solid white;
+	padding: 10px 0;
+	font-family: 'tbiSerif';
+}
+.top-footer .newsletter input:first-child:focus {
+	outline: none;
+}
+
+.top-footer .newsletter input:first-child::placeholder {
+	color: white;
+}
+
+.top-footer .newsletter input:last-child {
+	float: right;
+
+	background-color: transparent;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+.we-were-there   {
+	
+}
+
+.we-were-there h1 {
+	display: inline-block;
+}
+
+.we-were-there .more-tbi-link {
+	float: right;
+	height: 150px;
+	width: 150px;
+
+	border: 3px solid white;
+	border-radius: 50%;
+
+	text-align: center;
+	line-height: 150px;
+
+	font-size: 25px;
+	font-family: 'tbiSerif';
+	font-weight: bold;
+}
+
+.we-were-there img {
+	width: 100%;
+}
+
+.we-were-there .content  {
+	display:flex;
+	align-items: baseline;
+	width: 100%;
+}
+
+.we-were-there h2 {
+	font-size: 28px;
+}
+
+.we-were-there h3 {
+	font-style: italic;
+}
+
+.we-were-there p {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.we-were-there .right a {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.we-were-there .content .left {
+	flex: 1 0 0;
+}
+
+.we-were-there .right {
+	flex: 3 0 0;
+	padding-left: 100px;
+	margin-bottom: -100px	;
+}
+
+.what-we-do {
+	background:
+	    linear-gradient(
+            rgba(255, 0, 0, 0.45), 
+            rgba(255, 0, 0, 0.45)
+        ),
+        url(images/what-we-do-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	
+	color: black;
+	line-height: 22px;
+	font-weight: bold;
+	padding: 50px 150px;
+}
+
+footer img {
+	height: 100px;
+}
+
+footer .footer-item {
+	flex: 1 0 0;
+}
+
+footer .footer-item:nth-child(2){
+	padding: 0 100px;
+
 }

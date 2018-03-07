@@ -112,33 +112,33 @@ section .index {
 	transition: .5s ease;
 }
 
-.launch-images .who-we-are{
+.launch-images .knowledge{
 	background:
 	    linear-gradient(
-        rgba(255, 255, 0, 0.45), 
-            rgba(255, 255, 0, 0.45)
+          rgba(255, 198, 30, 0.45), 
+          rgba(255, 198, 30, 0.45)
         ),
         url(images/Knowledge.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
-.launch-images .what-we-do{
+.launch-images .leadership{
 	background:
 	    linear-gradient(
-            rgba(255, 0, 0, 0.45), 
-            rgba(255, 0, 0, 0.45)
+            rgba(255, 0, 54, 0.45), 
+            rgba(255, 0, 54, 0.45)
         ),
         url(images/Leadership.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-.launch-images .we-were-there{
+.launch-images .community{
 	background:
 	    linear-gradient(
-            rgba(0, 255, 0, 0.45), 
-            rgba(0, 255, 0, 0.45)
+            rgba(0, 178, 144, 0.45), 
+            rgba(0, 178, 144, 0.45)
         ),
         url(images/Community.jpg);
     background-size: 100%;
@@ -259,15 +259,15 @@ section .index {
 	padding: 10px;
 }
 
-.we-were-there   {
+.community   {
 	
 }
 
-.we-were-there h1 {
+.community h1 {
 	display: inline-block;
 }
 
-.we-were-there .more-tbi-link {
+.community .more-tbi-link {
 	float: right;
 	height: 150px;
 	width: 150px;
@@ -283,46 +283,46 @@ section .index {
 	font-weight: bold;
 }
 
-.we-were-there img {
+.community img {
 	width: 100%;
 }
 
-.we-were-there .content  {
+.community .content  {
 	display:flex;
 	align-items: baseline;
 	width: 100%;
 }
 
-.we-were-there h2 {
+.community h2 {
 	font-size: 28px;
 }
 
-.we-were-there h3 {
+.community h3 {
 	font-style: italic;
 }
 
-.we-were-there p {
+.community p {
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 30px;
 }
 
-.we-were-there .right a {
+.community .right a {
 	font-size: 20px;
 	font-weight: bold;
 }
 
-.we-were-there .content .left {
+.community .content .left {
 	flex: 1 0 0;
 }
 
-.we-were-there .right {
+.community .right {
 	flex: 3 0 0;
 	padding-left: 100px;
 	margin-bottom: -100px	;
 }
 
-.what-we-do {
+.leadership {
 	background:
 	    linear-gradient(
             rgba(255, 0, 0, 0.45), 

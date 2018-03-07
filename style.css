@@ -29,11 +29,16 @@ h1 {
 }
 
 section {
-	padding: 100px 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	position: relative;
+
+	height: 100vh;
 }
 
 section:nth-child(1) {
-	padding: 50px 150px 150px 150px;
 	color: gray;
 }
 
@@ -57,6 +62,12 @@ footer {
 .red {
 	background-color: #BB1C20;
 }
+
+.container {
+	padding: 5% 10%;
+	margin: auto;
+	min-width: 80%;
+}
 /* ---------- top header ------------*/
 .top-header {
 	margin-left: -100px;
@@ -78,8 +89,8 @@ footer {
 }
 
 .top-header li {
-	margin-left: 150px;
-	padding: 10px;
+	margin-left: 100px;
+	/*padding: 10px;*/
 }
 /* ---------- launch images ------------*/
 .launch-images {
@@ -90,10 +101,52 @@ footer {
 .image-link {
 	display: inline-block;
 	width: 33%;
-	position: relative;
+	padding: 14% 0;
+	height: 100%;
+
+	text-align: center;
+	text-transform: uppercase;
+	color: white;
+	font-size: 2vw;
+	font-weight: bold;
+
+	transition: .5s ease;
 }
 
-.image-link img {
+.who-we-are{
+	background:
+	    linear-gradient(
+        rgba(255, 255, 0, 0.45), 
+            rgba(255, 255, 0, 0.45)
+        ),
+        url(images/Knowledge.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.what-we-do{
+	background:
+	    linear-gradient(
+            rgba(255, 0, 0, 0.45), 
+            rgba(255, 0, 0, 0.45)
+        ),
+        url(images/Leadership.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.why-were-there{
+	background:
+	    linear-gradient(
+            rgba(0, 255, 0, 0.45), 
+            rgba(0, 255, 0, 0.45)
+        ),
+        url(images/Community.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+/*.image-link img {
 	height: 100%;
 	width: 100%;
 	opacity: 1;
@@ -101,9 +154,9 @@ footer {
 	filter: contrast(300%);
 	transition: .5s ease;
 	backface-visibility: hidden;
-}
+}*/
 
-.overlay {
+/*.overlay {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -125,8 +178,8 @@ footer {
 }
 .green.overlay {
 	background-color: #00B290
-}
-
+}*/
+/*
 .image-link .text {
 	color: white;
 	font-size: 2.8vw;
@@ -137,9 +190,11 @@ footer {
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	text-align: center;
+	text-transform: uppercase;
 	filter: drop-shadow(0 0 3px #000);
 }
+*/
 
-.image-link:hover img {
-	opacity: 0.3;
+.image-link:hover {
+	opacity: 0.4;
 }

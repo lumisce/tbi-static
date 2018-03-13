@@ -357,13 +357,38 @@ footer {
 	color: black;
 	line-height: 22px;
 	font-weight: bold;
-	padding: 50px 150px;
+	padding: 50px 0;
 }
 
 footer img {
 	height: 100px;
 }
 
+footer .footer-item {
+	display: inline-block;
+}
+
+footer .footer-content {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+footer .footer-content .logo {
+	margin: 0 10%;
+	width: 20%;
+}
+
+footer .footer-content .logo img {
+	/*width: 100%;*/
+	/*height: auto;*/
+}
+
+footer .footer-content .details {
+	margin-right: 5%;
+	width: 24%;
+}
+/*
 footer .footer-item {
 	flex: 1 0 0;
 }
@@ -372,3 +397,4 @@ footer .footer-item:nth-child(2){
 	padding: 0 100px;
 
 }
+*/

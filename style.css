@@ -58,24 +58,25 @@ section .index {
 	background-color: #BB1C20;
 }
 
-.container {
+/* ---------- top header ------------*/
+.top-header {
+/*	margin-left: -70px;
+	position: relative;*/
+	height: 25%;
+}
+
+.top-header .container {
 	height: 100%;
 /*	padding: 5% 10%;
 	margin: auto;
 	min-width: 80%;*/
 }
 
-.content {
+.top-header .content {
 	height:95%;
 	width: 90%;
 	margin: auto;
 	/*padding-top: 5%;*/
-}
-/* ---------- top header ------------*/
-.top-header {
-/*	margin-left: -70px;
-	position: relative;*/
-	height: 25%;
 }
 
 .top-header-content {
@@ -275,69 +276,78 @@ section .index {
 	border-radius: 3px;
 	padding: 10px;
 }
+/*COMMUNITY*/
 
-.community   {
-	
-}
-
-.community h1 {
+.community {
 	display: inline-block;
 }
 
-.community .more-tbi-link {
+.community .container {
+	height: 100vh;
+}
+
+
+.community .left {
+	display: inline-block;
+	height: 100%;
+	width: 25%;
+	margin-right: 5%;
+	margin-left: 10%;
+}
+
+.community .left h1,
+.community .left h2 {
+	margin: 0;
+}
+
+.community .left .title {
+	height: 15%;
+}
+
+.community .left img {
+	width: 100%;
+	margin: 5% 0;
+}
+
+.community .left .article-title {
+	height: 35%;
+	margin-bottom: 5%;
+}
+
+.community .right {
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	margin-right: 9%;
+}
+
+.community .right .more-tbi-container {
+	height: 25%;
+	margin-top: 10%;
+}
+
+.community .right .more-tbi-link {
 	float: right;
-	height: 150px;
-	width: 150px;
+	height: 100px;
+	width: 100px;
 
 	border: 3px solid white;
 	border-radius: 50%;
 
 	text-align: center;
-	line-height: 150px;
+	line-height: 100px;
 
-	font-size: 25px;
+	font-size: 16px;
 	font-family: 'tbiSerif';
 	font-weight: bold;
 }
 
-.community img {
-	width: 100%;
+.community .right .article-content {
+	margin-top: 20%;
+	height: 40%;
 }
 
-.community .content  {
-	display:flex;
-	align-items: baseline;
-	width: 100%;
-}
-
-.community h2 {
-	font-size: 28px;
-}
-
-.community h3 {
-	font-style: italic;
-}
-
-.community p {
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 30px;
-}
-
-.community .right a {
-	font-size: 20px;
-	font-weight: bold;
-}
-
-.community .content .left {
-	flex: 1 0 0;
-}
-
-.community .right {
-	flex: 3 0 0;
-	padding-left: 100px;
-	margin-bottom: -100px	;
-}
+/*Leadership*/
 
 .leadership {
 	background:

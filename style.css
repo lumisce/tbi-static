@@ -221,8 +221,7 @@ section .index {
 /* LEADERSHIP ------------------------------------ */
 
 .leadership {
-	background: url(images/what-we-do-bg.png);
-    background-size: cover;
+    background-color: #00493C;
     background-repeat: no-repeat;
 }
 
@@ -231,60 +230,64 @@ section .index {
 	margin: auto;
 }
 
-.leadership .title-container {
-	width: 55%;
-	height: 35%;
-}
-
 .leadership .title-container .title {
-	position: relative;
-	height: 43%;
+	padding: 50px 0;
 }
 
 .leadership .title-container p {
-	height: 43%;
-	margin: 0;
-	margin-top: 4%;
+	display: none;
 }
 
 .leadership .title-container h1 {
-	position: absolute;
 	margin: 0;
 	bottom: 0;
 }
 
 .leadership .carousel h2 {
-	margin-top: 0;
+	margin: 0;
+	font-size: 20px;
 }
 
 .leadership .carousel h3 {
 	font-style: italic;
+	font-weight: normal;
+	margin: 0;
 }
 
-.leadership .carousel {
-	height: 50%;
-	width: 100%;
-	margin-top: 10%;
-	margin-bottom: 5%;
+.leadership .carousel .content-group-mobile {
+	display: flex;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+
+.leadership .carousel .content-group-mobile::last-child {
+	margin-bottom: 0;
+}
+
+.leadership .carousel .arrow {
+	display:inline-block;
+	width:40%;
+}
+
+.leadership .carousel .img-arrow {
+	width: 50%;
 }
 
 .leadership .carousel .left {
-	display: inline-block;
-	height: 100%;
-	width: 31%;
-	margin-right: 6%;
+	width: 50%;
 }
 
 .leadership .carousel .right {
-	display: inline-block;
+	display: none;
 	height: 100%;
 	width: 62%;
 }
 
 .leadership .carousel p {
 	margin: 0;
-	/*line-height: 30px;*/
 }
+
 
 .leadership .slider .slick-prev {
 	margin-left: -7%;
@@ -313,48 +316,6 @@ footer {
 }
 
 @media screen and (min-width: 426px) {
-	@font-face {
-		font-family: tbiSerif;
-		src: url(fonts/BluuNext-Bold.otf);
-	}
-
-	body{
-		color: #FFFFFF;
-		font-family: sans-serif;
-	}
-
-	img {
-		display: inline-block;
-	}
-
-	a {
-		text-decoration: none;
-	}
-
-	li {
-		list-style: none;
-	}
-
-	a:visited {
-		color: #FFFFFF;
-	}
-
-	h1 {
-		font-family: tbiSerif;
-	}
-
-	section {
-		height: 100vh;
-	}
-
-	section:nth-child(1) {
-		color: gray;
-	}
-
-	section .index {
-		
-	}
-
 	/* LANDING */
 	.landing-content-desktop {
 		display: block;
@@ -393,6 +354,10 @@ footer {
 
 	.top-header ul {
 		width: 100%;
+	}
+
+	.top-header .mobile-nav {
+		display: none;
 	}
 
 	.top-header .desktop-nav {
@@ -444,8 +409,22 @@ footer {
 	    background-repeat: no-repeat;
 	}
 
-	.image-link:hover {
-		opacity: 0.4;
+	.landing-content-desktop .knowledge:hover {
+		background: url(images/Knowledge-After.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.landing-content-desktop .leadership:hover {
+		background: url(images/Leadership-After.png);
+	    background-size: 100%;
+	    background-repeat: no-repeat;
+	}
+
+	.landing-content-desktop .community:hover {
+		background: url(images/Community-After.png);
+	    background-size: 100%;
+	    background-repeat: no-repeat;
 	}
 
 	.top-footer-container {
@@ -546,13 +525,11 @@ footer {
 
 	.leadership {
 		background: url(images/what-we-do-bg.png);
-	    background-size: cover;
-	    background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 	.leadership .container {
-		width: 80%;
-		margin: auto;
+		height: 100vh;
 	}
 
 	.leadership .title-container {
@@ -566,24 +543,17 @@ footer {
 	}
 
 	.leadership .title-container p {
+		display: block;
 		height: 43%;
 		margin: 0;
 		margin-top: 4%;
+		line-height: 30px;
 	}
 
 	.leadership .title-container h1 {
 		position: absolute;
-		margin: 0;
-		bottom: 0;
 	}
 
-	.leadership .carousel h2 {
-		margin-top: 0;
-	}
-
-	.leadership .carousel h3 {
-		font-style: italic;
-	}
 
 	.leadership .carousel {
 		height: 50%;
@@ -592,12 +562,38 @@ footer {
 		margin-bottom: 5%;
 	}
 
-	.leadership .carousel .left {
+	.leadership .carousel h2 {
+		font-size: 22px;
+	}
+
+	.leadership .carousel h3 {
+		font-style: italic;
+	}
+
+	.leadership .carousel .event {
+		display: flex;
+	}
+
+	.leadership .carousel .content-group-mobile {
 		display: inline-block;
 		height: 100%;
 		width: 31%;
 		margin-right: 6%;
+		margin-bottom: 0;
 	}
+
+	.leadership .carousel .arrow {
+		display:none;
+		width:40%;
+	}
+
+	.leadership .carousel .left {
+		/*display: inline-block;*/
+		/*height: 100%;*/
+		width: 100%;
+		/*margin-right: 6%;*/
+	}
+
 
 	.leadership .carousel .right {
 		display: inline-block;
@@ -606,21 +602,8 @@ footer {
 	}
 
 	.leadership .carousel p {
-		margin: 0;
-		/*line-height: 30px;*/
+		line-height: 30px;
 	}
-
-	.leadership .slider .slick-prev {
-		margin-left: -7%;
-		top: 0;
-		background: transparent;
-	}
-
-	.leadership .slider .slick-next {
-		margin-right: -7%;
-		top: 0;
-	}
-
 
 	footer {
 		display: flex;

@@ -3,9 +3,14 @@
 	src: url(fonts/BluuNext-Bold.otf);
 }
 
+@font-face {
+	font-family: tbiSansSerif;
+	src: url(fonts/AktivGrotesk.ttf);
+}
+
 body{
 	color: #FFFFFF;
-	font-family: sans-serif;
+	font-family: tbiSansSerif;
 }
 
 img {

@@ -50,33 +50,26 @@ section .index {
 	background-color: #151515
 }
 
-.green {
-	background-color: #00463B
-}
-
-.red {
-	background-color: #BB1C20;
-}
-
-/* ---------- top header ------------*/
-.top-header {
-/*	margin-left: -70px;
-	position: relative;*/
-	height: 25%;
-}
-
-.top-header .container {
+.container {
 	height: 100%;
 /*	padding: 5% 10%;
 	margin: auto;
 	min-width: 80%;*/
 }
 
-.top-header .content {
+.content {
 	height:95%;
 	width: 90%;
 	margin: auto;
 	/*padding-top: 5%;*/
+}
+
+
+/* ---------- top header ------------*/
+.top-header {
+/*	margin-left: -70px;
+	position: relative;*/
+	height: 25%;
 }
 
 .top-header-content {
@@ -280,12 +273,12 @@ section .index {
 
 .community {
 	display: inline-block;
+	background-color: #BB1C20;
 }
 
 .community .container {
 	height: 100vh;
 }
-
 
 .community .left {
 	display: inline-block;
@@ -295,13 +288,20 @@ section .index {
 	margin-left: 10%;
 }
 
-.community .left h1,
 .community .left h2 {
 	margin: 0;
 }
 
+.community .left h1 {
+	position: absolute;
+	bottom: 0;
+	margin: 0;
+}
+
 .community .left .title {
+	position: relative;
 	height: 15%;
+	bottom: 0;
 }
 
 .community .left img {
@@ -350,14 +350,69 @@ section .index {
 /*Leadership*/
 
 .leadership {
-	background:
-	    linear-gradient(
-            rgba(255, 0, 0, 0.45), 
-            rgba(255, 0, 0, 0.45)
-        ),
-        url(images/what-we-do-bg.jpg);
+	background: url(images/what-we-do-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.leadership .container {
+	width: 80%;
+	margin: auto;
+}
+
+.leadership .title-container {
+	width: 55%;
+	height: 35%;
+}
+
+.leadership .title-container .title {
+	position: relative;
+	height: 43%;
+}
+
+.leadership .title-container p {
+	height: 43%;
+	margin: 0;
+	margin-top: 4%;
+}
+
+.leadership .title-container h1 {
+	position: absolute;
+	margin: 0;
+	bottom: 0;
+}
+
+.leadership .carousel h2 {
+	margin-top: 0;
+}
+
+.leadership .carousel h3 {
+	font-style: italic;
+}
+
+.leadership .carousel {
+	height: 50%;
+	width: 100%;
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+
+.leadership .carousel .left {
+	display: inline-block;
+	height: 100%;
+	width: 31%;
+	margin-right: 6%;
+}
+
+.leadership .carousel .right {
+	display: inline-block;
+	height: 100%;
+	width: 62%;
+}
+
+.leadership .carousel p {
+	margin: 0;
+	/*line-height: 30px;*/
 }
 
 footer {
@@ -389,22 +444,7 @@ footer .footer-content .logo {
 	width: 20%;
 }
 
-footer .footer-content .logo img {
-	/*width: 100%;*/
-	/*height: auto;*/
-}
-
 footer .footer-content .details {
 	margin-right: 5%;
 	width: 24%;
 }
-/*
-footer .footer-item {
-	flex: 1 0 0;
-}
-
-footer .footer-item:nth-child(2){
-	padding: 0 100px;
-
-}
-*/

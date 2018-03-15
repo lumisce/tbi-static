@@ -28,10 +28,6 @@ h1 {
 	font-family: tbiSerif;
 }
 
-/*section {
-	height: 100vh;
-}*/
-
 section:nth-child(1) {
 	color: gray;
 }
@@ -68,12 +64,155 @@ section .index {
 	display: none;
 }
 
-.top-header .mobile-nav {
+.top-header .mobile-nav-toggle {
 	display: inline-block;
 	float: right;
 	margin: 40px 20px;
 	font-weight: bold;
 }
+
+.top-header .mobile-nav {
+	margin-left: 425px;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	transition: 0.3s;
+}
+
+.top-header .mobile-nav-content {
+	display: inline-block;
+	height: 100%;
+	width: 85%;
+	background-color: white;
+	float: right;
+}
+
+.top-header .mobile-nav-sidebar {
+	display: inline-block;
+	width: 15%;
+	height: 100%;
+	background-color: black;
+}
+
+.top-header .mobile-nav-sidebar .logo {
+	width: 50%;
+	margin: auto;
+	padding: 20px 0;
+}
+
+
+.top-header .mobile-nav-sidebar img {
+	width: 100%;
+	display: block;
+}
+
+
+
+
+.top-header .mobile-nav-content .header {
+	/*background-color: black;*/
+	color: black;
+	height: 20%;
+	padding: 0 10%;
+
+	display: flex;
+	align-items: center;
+}
+
+.top-header .mobile-nav-content .header h1 {
+	display: inline-block;
+	margin: 0;
+}
+
+.top-header .mobile-nav-content .header a {
+	float: right;
+	margin: 0;
+	margin-left: auto;
+	font-size: 21px;
+}
+
+.top-header .mobile-nav-content .image-links {
+	height: 30%;
+	display: flex;
+	flex-direction: column;
+}
+
+.top-header .mobile-nav-content .image-links div {
+	height: 33%;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	padding: 0 30px;
+	text-align: right;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 21px;
+}
+
+.top-header .mobile-nav-content .image-links .knowledge {
+	background: url(/images/Knowledge-Before.png);
+	background-position: 0px -60px;
+	background-size: 100%;
+}
+
+.top-header .mobile-nav-content .image-links .community {
+	background: url(/images/Community-Before.png);
+	background-position: 0px -40px;
+	background-size: 100%;
+}
+
+.top-header .mobile-nav-content .image-links .leadership {
+	background: url(/images/Leadership-Before.png);
+	background-position: 0px -60px;
+	background-size: 100%;
+}
+
+.top-header .mobile-nav-content .image-links .about {
+	color: black;
+	text-transform: none;
+}
+
+.top-header .mobile-nav-content .footer {
+	height: 100px;
+	padding-right: 30px;
+	color: black;
+	text-align: right
+}
+
+.top-header .mobile-nav-content .footer .links {
+	color: black;
+	display: inline-block;
+	height: 100px;
+	width: 100%;
+	margin: 40px 10px;
+}
+
+.top-header .mobile-nav-content .footer .links .circle {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	margin-right: 10px;
+
+	border: 1px solid black;
+	border-radius: 50%;
+	text-align: center;
+	color: black;
+	
+	line-height: 100px;
+}
+
+.top-header .mobile-nav-content .footer .info {
+	margin-bottom: 20px;
+}
+
 
 .landing-content-desktop {
 	display: none;
@@ -356,6 +495,7 @@ footer {
 		width: 100%;
 	}
 
+	.top-header .mobile-nav-toggle,
 	.top-header .mobile-nav {
 		display: none;
 	}

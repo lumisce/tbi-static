@@ -21,9 +21,48 @@
 								<li><a href="">Donate / Contact Us</a></li>
 							</ul>
 						</nav>
-						<nav class="mobile-nav">
+						<a class="mobile-nav-toggle" href="javascript:void(0)" class="openbtn" onclick="openNav()">
 							Menu
-						</nav>
+						</a>
+						<div class="mobile-nav">
+							<div class="mobile-nav-sidebar">
+								<div class="logo">
+									<img src="/images/logo/Yellow Flag.png" alt=""/>
+									<img src="/images/logo/Red Flag.png" alt=""/>
+									<img src="/images/logo/Green Flag.png" alt=""/>
+								</div>
+							</div>
+							<div class="mobile-nav-content">
+								<div class="header">
+									<h1>T.B.I.</h1>
+									<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+								</div>
+								
+								<div class="image-links">
+									<div class="knowledge">Knowledge</div>
+									<div class="leadership">Leadership</div>
+									<div class="community">Community</div>
+									<div class="about">About Our Organization</div>
+								</div>
+
+								<div class="footer">
+									<div class="links">
+										<div class="circle">Donate</div>
+										<div class="circle">Contact Us</div>
+									</div>
+									<div class="info">
+										39 Broadway Avenue<br />
+										17th Floor, Suite 1740<br />
+										New York, New York 10006
+									</div>
+									<div class="info">
+										Phone (212) 871-6899<br />
+										Fax (917) 591-5281<br />
+										Email info@theblackinstitute.com
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				
@@ -178,6 +217,14 @@
 				]
 			});
 		});
+
+		function closeNav() {
+			$(".mobile-nav").css('margin-left','425px');
+		}
+
+		function openNav() {
+			$(".mobile-nav").css('margin-left','0px');
+		}
 	</script>
 </body>
 </html>

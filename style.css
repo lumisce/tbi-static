@@ -102,6 +102,7 @@ section .index {
 	display: inline-block;
 	width: 15%;
 	height: 100%;
+	position: fixed;
 	background-color: black;
 }
 
@@ -143,13 +144,13 @@ section .index {
 }
 
 .top-header .mobile-nav-content .image-links {
-	height: 30%;
+	height: 220px%;
 	display: flex;
 	flex-direction: column;
 }
 
 .top-header .mobile-nav-content .image-links div {
-	height: 33%;
+	height: 55px;
 
 	display: flex;
 	align-items: center;
@@ -161,6 +162,8 @@ section .index {
 	font-weight: bold;
 	font-size: 21px;
 }
+
+
 
 .top-header .mobile-nav-content .image-links .knowledge {
 	background: url(/images/Knowledge-Before.png);

@@ -11,6 +11,7 @@
 body{
 	color: #FFFFFF;
 	font-family: tbiSansSerif;
+	font-size: 21px;
 }
 
 img {
@@ -74,6 +75,7 @@ section .index {
 	float: right;
 	margin: 40px 20px;
 	font-weight: bold;
+	color: white;
 }
 
 .top-header .mobile-nav {
@@ -90,7 +92,7 @@ section .index {
 	transition: 0.3s;
 }
 
-.top-header .mobile-nav-content {
+.mobile-nav-content {
 	display: inline-block;
 	height: 100%;
 	width: 85%;
@@ -98,7 +100,7 @@ section .index {
 	float: right;
 }
 
-.top-header .mobile-nav-sidebar {
+.mobile-nav-sidebar {
 	display: inline-block;
 	width: 15%;
 	height: 100%;
@@ -106,24 +108,21 @@ section .index {
 	background-color: black;
 }
 
-.top-header .mobile-nav-sidebar .logo {
+.mobile-nav-sidebar .logo {
 	width: 50%;
 	margin: auto;
 	padding: 20px 0;
 }
 
 
-.top-header .mobile-nav-sidebar img {
+.mobile-nav-sidebar img {
 	width: 100%;
 	display: block;
 }
 
-
-
-
-.top-header .mobile-nav-content .header {
+.mobile-nav-content .header {
 	/*background-color: black;*/
-	color: black;
+	color: #6102A1;
 	height: 20%;
 	padding: 0 10%;
 
@@ -131,25 +130,29 @@ section .index {
 	align-items: center;
 }
 
-.top-header .mobile-nav-content .header h1 {
+.mobile-nav-content .header h1 {
 	display: inline-block;
 	margin: 0;
-}
-
-.top-header .mobile-nav-content .header a {
-	float: right;
-	margin: 0;
-	margin-left: auto;
 	font-size: 21px;
 }
 
-.top-header .mobile-nav-content .image-links {
+.mobile-nav-content .header a {
+	float: right;
+	margin: 0;
+	margin-left: auto;
+
+	color: #6102A1;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.mobile-nav-content .image-links {
 	height: 220px%;
 	display: flex;
 	flex-direction: column;
 }
 
-.top-header .mobile-nav-content .image-links div {
+.mobile-nav-content .image-links div {
 	height: 55px;
 
 	display: flex;
@@ -163,62 +166,68 @@ section .index {
 	font-size: 21px;
 }
 
+.mobile-nav-content .image-links div:last-child {
+	color: #6102A1;
+}
 
-
-.top-header .mobile-nav-content .image-links .knowledge {
+.mobile-nav-content .image-links .knowledge {
 	background: url(/images/Knowledge-Before.png);
 	background-position: 0px -60px;
 	background-size: 100%;
 }
 
-.top-header .mobile-nav-content .image-links .community {
+.mobile-nav-content .image-links .community {
 	background: url(/images/Community-Before.png);
 	background-position: 0px -40px;
 	background-size: 100%;
 }
 
-.top-header .mobile-nav-content .image-links .leadership {
+.mobile-nav-content .image-links .leadership {
 	background: url(/images/Leadership-Before.png);
 	background-position: 0px -60px;
 	background-size: 100%;
 }
 
-.top-header .mobile-nav-content .image-links .about {
+.mobile-nav-content .image-links .about {
 	color: black;
 	text-transform: none;
 }
 
-.top-header .mobile-nav-content .footer {
+.mobile-nav-content .footer {
 	height: 100px;
 	padding-right: 30px;
-	color: black;
-	text-align: right
+	color: #6102A1;;
+	text-align: right;
+
 }
 
-.top-header .mobile-nav-content .footer .links {
-	color: black;
+.mobile-nav-content .footer .links {
 	display: inline-block;
 	height: 100px;
 	width: 100%;
 	margin: 40px 10px;
+
+	font-family: 'tbiSerif';
+	font-size: 18px;
 }
 
-.top-header .mobile-nav-content .footer .links .circle {
+.mobile-nav-content .footer .links .circle {
 	display: inline-block;
 	height: 100px;
 	width: 100px;
 	margin-right: 10px;
 
-	border: 1px solid black;
+	border: 1px solid #6102A1;
 	border-radius: 50%;
 	text-align: center;
-	color: black;
+	color: #6102A1;
 	
 	line-height: 100px;
 }
 
-.top-header .mobile-nav-content .footer .info {
+.mobile-nav-content .footer .info {
 	margin-bottom: 20px;
+	font-size: 18px;
 }
 
 
@@ -229,12 +238,13 @@ section .index {
 .landing-content-mobile {
 	height: 40%;
 	display: flex;
+	width: 100%;
 }
 .landing-content-mobile p {
 	text-align: center;
 	width: 80%;
 	margin: auto;
-	font-size: 18px;
+	font-size: 20px;
 	line-height: 28px;
 }
 
@@ -342,7 +352,7 @@ section .index {
 
 .community .right p {
 	margin-top: 5px;
-	line-height: 25px;
+	line-height: 30px;
 }
 
 .community .right .more-tbi-container {
@@ -360,7 +370,7 @@ section .index {
 	height: 100px;
 	width: 100px;
 
-	font-size: 16px;
+	font-size: 18px;
 	font-family: 'tbiSerif';
 	font-weight: bold;
 }
@@ -392,7 +402,7 @@ section .index {
 
 .leadership .carousel h2 {
 	margin: 0;
-	font-size: 20px;
+	font-size: 21px;
 }
 
 .leadership .carousel h3 {
@@ -456,6 +466,8 @@ footer {
 	line-height: 22px;
 	font-weight: bold;
 	padding: 50px 0;
+
+	font-size: 18px;
 }
 
 footer {
@@ -463,9 +475,30 @@ footer {
 }
 
 @media screen and (min-width: 426px) {
+
+	.landing-content-desktop {
+		display: block;
+		flex-grow: 2;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	.landing .content {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
 	/* LANDING */
 	.landing-content-desktop {
 		display: block;
+		flex-grow: 2;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.landing-content-mobile {
@@ -654,14 +687,14 @@ footer {
 
 	.community .right .more-tbi-link {
 		float: right;
-		height: 100px;
-		width: 100px;
+		height: 150px;
+		width: 150px;
 
 		border: 3px solid white;
 		border-radius: 50%;
 
 		text-align: center;
-		line-height: 100px;
+		line-height: 150px;
 	}
 
 	.community .right .article-content {
@@ -677,11 +710,12 @@ footer {
 	}
 
 	.leadership .container {
+		min-height: 100vh;
 		height: 100vh;
 	}
 
 	.leadership .title-container {
-		width: 55%;
+		width: 80%;
 		height: 35%;
 	}
 
@@ -711,7 +745,7 @@ footer {
 	}
 
 	.leadership .carousel h2 {
-		font-size: 22px;
+		font-size: 21px;
 	}
 
 	.leadership .carousel h3 {
@@ -760,6 +794,7 @@ footer {
 		color: black;
 		line-height: 22px;
 		font-weight: bold;
+		font-size: 14px;
 		padding: 50px 0;
 	}
 
@@ -785,5 +820,24 @@ footer {
 	footer .footer-content .details {
 		margin-right: 5%;
 		width: 24%;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.landing-content-desktop {
+		display: block;
+	}
+
+
+	.landing .content {
+		display: block;
+	}
+
+	footer {
+		font-size: 21px;
+	}
+
+	.leadership .title-container {
+		width: 55%;
 	}
 }

@@ -1,0 +1,432 @@
+/*LANDING*/
+.landing {
+	background-color: #151515;
+	height: 100vh;
+}
+
+.container {
+	height: 100%;
+}
+
+.content {
+	height: 100%;
+}
+
+.top-header-content {
+	height: 100px;
+}
+
+.top-header-content .logo {
+	width: 100px;
+	margin: 20px 10px;
+}
+
+.top-header .desktop-nav {
+	display: none;
+}
+
+.top-header .mobile-nav-toggle {
+	display: inline-block;
+	float: right;
+	margin: 40px 20px;
+	font-weight: bold;
+	color: white;
+}
+
+.top-header .mobile-nav {
+	margin-left: 425px;
+	height: 100%;
+	width: 100%;
+	background-color: white;
+
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	transition: 0.3s;
+}
+
+.mobile-nav-content {
+	display: inline-block;
+	height: 100%;
+	width: 85%;
+	background-color: white;
+	float: right;
+}
+
+.mobile-nav-sidebar {
+	display: inline-block;
+	width: 15%;
+	height: 100%;
+	position: fixed;
+	background-color: black;
+}
+
+.mobile-nav-sidebar .logo {
+	width: 50%;
+	margin: auto;
+	padding: 20px 0;
+}
+
+
+.mobile-nav-sidebar img {
+	width: 100%;
+	display: block;
+}
+
+.mobile-nav-content .header {
+	/*background-color: black;*/
+	color: #6102A1;
+	height: 20%;
+	padding: 0 10%;
+
+	display: flex;
+	align-items: center;
+}
+
+.mobile-nav-content .header h1 {
+	display: inline-block;
+	margin: 0;
+	font-size: 21px;
+}
+
+.mobile-nav-content .header a {
+	float: right;
+	margin: 0;
+	margin-left: auto;
+
+	color: #6102A1;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.mobile-nav-content .image-links {
+	height: 220px%;
+	display: flex;
+	flex-direction: column;
+}
+
+.mobile-nav-content .image-links div {
+	height: 55px;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+
+	padding: 0 30px;
+	text-align: right;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 21px;
+}
+
+.mobile-nav-content .image-links div:last-child {
+	color: #6102A1;
+}
+
+.mobile-nav-content .image-links .knowledge {
+	background: url(/images/Knowledge-Before.png);
+	background-position: 0px -60px;
+	background-size: 100%;
+}
+
+.mobile-nav-content .image-links .community {
+	background: url(/images/Community-Before.png);
+	background-position: 0px -40px;
+	background-size: 100%;
+}
+
+.mobile-nav-content .image-links .leadership {
+	background: url(/images/Leadership-Before.png);
+	background-position: 0px -60px;
+	background-size: 100%;
+}
+
+.mobile-nav-content .image-links .about {
+	color: black;
+	text-transform: none;
+}
+
+.mobile-nav-content .footer {
+	height: 100px;
+	padding-right: 30px;
+	color: #6102A1;;
+	text-align: right;
+
+}
+
+.mobile-nav-content .footer .links {
+	display: inline-block;
+	height: 100px;
+	width: 100%;
+	margin: 40px 10px;
+
+	font-family: 'tbiSerif';
+	font-size: 18px;
+}
+
+.mobile-nav-content .footer .links .circle {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	margin-right: 10px;
+
+	border: 1px solid #6102A1;
+	border-radius: 50%;
+	text-align: center;
+	color: #6102A1;
+	
+	line-height: 100px;
+}
+
+.mobile-nav-content .footer .info {
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+
+
+/*Top Footer*/
+.top-footer{
+	height: 25%;
+	padding-bottom: 5%;
+}
+
+.top-footer-container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.top-footer .social-media ul {
+	padding: 0;
+	margin: 0;
+}
+
+.top-footer .social-media li {
+	display: inline-block;
+}
+
+.top-footer .social-media img {
+	width: 30px;
+	margin-top: 10px;
+}
+
+.top-footer .newsletter {
+	width: 100%;
+}
+
+.top-footer .newsletter input:first-child {
+	display: block;
+	width: 70%;
+	height: 26px;
+	margin: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+
+	background-color: transparent;
+	color: white;
+	border: none;
+	border-bottom: 1px solid white;
+	padding: 10px 0;
+	font-family: 'tbiSerif';
+}
+.top-footer .newsletter input:first-child:focus {
+	outline: none;
+}
+
+.top-footer .newsletter input:first-child::placeholder {
+	color: white;
+}
+
+.top-footer .newsletter input:last-child {
+	display: block;
+	margin: auto;
+
+	background-color: transparent;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border: 1px solid white;
+	border-radius: 3px;
+	padding: 10px;
+}
+
+
+footer {
+	display: flex;
+	align-items: center;
+	
+	color: black;
+	line-height: 22px;
+	font-weight: bold;
+	padding: 50px 0;
+
+	font-size: 18px;
+}
+
+footer {
+	display:none;
+}
+
+@media screen and (min-width: 426px) {
+	.landing-content-desktop {
+		display: block;
+		flex-grow: 2;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+
+	.landing .content {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+	}
+	/* LANDING */
+	.landing-content-desktop {
+		display: block;
+		flex-grow: 2;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.landing-content-mobile {
+		display:none;
+	}
+
+	.content {
+		height:95%;
+		width: 90%;
+		margin: auto;
+	}
+
+	.top-header {
+		height: 25%;
+	}
+
+	.top-header-content {
+		height :100%;
+		display: flex;
+		align-items: center;
+	}
+
+	.top-header-content .logo {
+		height: 40%;
+		width: auto;
+	}
+
+	.top-header .desktop-nav, .top-header ul, .top-header li {
+		display: inline-block;
+		padding: 0;
+		margin: 0;
+	}
+
+	.top-header ul {
+		width: 100%;
+	}
+
+	.top-header .mobile-nav-toggle,
+	.top-header .mobile-nav {
+		display: none;
+	}
+
+	.top-header .desktop-nav {
+		display: inline-block;
+		right: 0;
+		flex-grow: 1;
+		font-weight: bold;
+		text-align: right;
+	}
+
+	.top-header li:nth-child(2) {
+		padding-left: 27%;
+	}
+
+	.landing-content-desktop {
+		width: 100%;
+		white-space: nowrap;
+	}
+
+	/* Top footer */
+
+	.top-footer-container {
+		flex-direction: row;
+	}
+
+	.top-footer .social-media {
+		flex: 1 0 0;
+	}
+
+	.top-footer .newsletter {
+		flex: 2 0 0;
+	}
+
+	.top-footer .newsletter input:first-child {
+		display:inline-block;
+		width: 50%;
+		height: 26px;
+		margin: 0;
+	}
+
+	.top-footer .newsletter input:last-child {
+		float: right;
+	}
+
+	footer {
+		display: flex;
+		align-items: center;
+		
+		color: black;
+		line-height: 22px;
+		font-weight: bold;
+		font-size: 14px;
+		padding: 50px 0;
+	}
+
+	footer img {
+		height: 100px;
+	}
+
+	footer .footer-item {
+		display: inline-block;
+	}
+
+	footer .footer-content {
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+
+	footer .footer-content .logo {
+		margin: 0 10%;
+		width: 20%;
+	}
+
+	footer .footer-content .details {
+		margin-right: 5%;
+		width: 24%;
+	}
+}
+
+
+@media screen and (min-width: 1025px) {
+	.landing-content-desktop {
+		display: block;
+	}
+
+
+	.landing .content {
+		display: block;
+	}
+
+	footer {
+		font-size: 21px;
+	}
+}
+

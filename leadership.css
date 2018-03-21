@@ -12,7 +12,7 @@
 body{
 	/*color: #FFFFFF;*/
 	font-family: tbiSansSerif;
-	font-size: 21px;
+	font-size: 16px;
 }
 
 h1, h2 {
@@ -28,12 +28,13 @@ a {
 
 p {
 	font-family: 'tbiSansSerif';
-	line-height: 30px;
+	line-height: 35px;
 	font-size: 18px;
 }
 
 .landing {
 	background-color: white;
+	height: auto;
 }
 
 .top-header-content {
@@ -92,8 +93,64 @@ p {
 	margin: 20px;
 }
 
+.articles {
+	width: 100%;
+}
 
-@media screen and (min-width: 426px) {
+.article {
+	background-color: black;
+	color: white;
+	margin-bottom: 5px;
+}
+
+.article .container {
+	width: 90%;
+	margin: auto;
+	padding: 50px 0;
+}
+
+.article-img{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+.article h1,
+.article h2 {
+	font-family: 'tbiSansSerif';
+	width: 100%;
+}
+
+.article h1 {
+	font-size: 26px;
+}
+
+.article h2 {
+	font-weight: normal;
+	font-style: italic;
+	font-size: 21px;
+}
+
+
+@media screen and (min-width: 650px) {
+
+	body{
+		font-size: 21px;
+	}
+
+	p {
+		font-family: 'tbiSansSerif';
+		font-size: 21px;
+	}
+
+	.landing {
+		height: auto;
+	}
+
+	.top-header,
+	.top-footer{
+		margin: 50px 0;
+	}
 
 	.top-header-content .logo {
 		display:flex;
@@ -141,8 +198,78 @@ p {
 		width: 70%;
 
 	}
+
+	.article .container {
+		width: 80%;
+		margin: auto;
+	}
+
+	.social-media{ 
+		width: 80%; 
+		margin:auto;
+	}
+
+}
+
+@media screen and (min-width: 768px){
+
+	.article .container {
+		display: flex;
+		align-items: center;
+	}
+
+	.article-img{
+		display: inline-block;
+		width: 24%;
+		padding: 0;
+	}
+
+	.article-img img {
+		width: 100%;
+		max-width: 300px;
+	}
+
+	.article-content {
+		display: inline-block;
+		width: 70%;
+		margin-left: 5%;
+
+	}
+
+	.article-content p {
+		font-size: 21px;
+	}
+
 }
 
 @media screen and (min-width: 1025px) {
 
+	.landing {
+		height: 100vh;
+	}
+
+	.landing-content {
+		align-items: center;
+	}
+
+	.top-header,
+	.top-footer{
+		margin: 0;
+	}
+
+	.social-media {
+		padding: 50px 0;
+	}
+
+}
+
+@media screen and (max-height: 746px and min-width: 650px	){
+	.top-header,
+	.top-footer{
+		margin: 50px 0;
+	}
+
+	.landing {
+		height: auto;
+	}
 }

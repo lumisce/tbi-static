@@ -152,6 +152,8 @@ section .index {
 	flex-direction: column;
 }
 
+
+
 .mobile-nav-content .image-links div {
 	height: 55px;
 
@@ -166,8 +168,8 @@ section .index {
 	font-size: 21px;
 }
 
-.mobile-nav-content .image-links div:last-child {
-	color: #6102A1;
+.mobile-nav-content .image-links a {
+	color: white;
 }
 
 .mobile-nav-content .image-links .knowledge {
@@ -191,6 +193,7 @@ section .index {
 .mobile-nav-content .image-links .about {
 	color: black;
 	text-transform: none;
+	color: #6102A1;
 }
 
 .mobile-nav-content .footer {

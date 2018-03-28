@@ -85,8 +85,12 @@ p {
 	list-style-type: none;
 	padding: 0;
 }
-.section-links li{
+.section-links li {
 	margin: 5px;
+}
+
+.section-links a.selected, .section-links a.selected:link, .section-links a.selected:visited {
+	text-decoration: underline;
 }
 
 .section-details {

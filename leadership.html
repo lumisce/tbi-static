@@ -31,16 +31,16 @@
 				<div class="landing-content">
 					<div class="section-links">
 						<ul>
-							<li><a href="">Education</a></li>
-							<li><a href="">Economic Fairness</a></li>
-							<li><a href="">Environmental Justice</a></li>
-							<li><a href="">Immigration Reform</a></li>
+							<li><a class="selected" href="javascript:void(0)" onclick="openSection(0); return false;">Education</a></li>
+							<li><a class="" href="javascript:void(0)" onclick="openSection(1); return false;">Economic Fairness</a></li>
+							<li><a class="" href="javascript:void(0)" onclick="openSection(2); return false;">Environmental Justice</a></li>
+							<li><a class="" href="javascript:void(0)" onclick="openSection(3); return false;">Immigration Reform</a></li>
 						</ul>
 					</div>
 					<div class="section-details">
-						<h1 class="section-title">Economic Campaigns</h1>
+						<h1 class="section-title">Education Campaigns</h1>
 						<div class="section-desc">
-							<p>The Black Institute seeks for all students to receive quality education. Quality education consists of great teachers, active parents, outstanding principals, out of the box thinkers, stellar curriculum, safe learning environments and the expectation and treatment of all students as scholars. </p>
+							<p>The Black Institute seeks for all students to receive quality public education. Quality public education consists of great educators, participative parents, outstanding principals, holistic and integrated curriculums, safe learning environments, and the expectation and treatment of all students as scholars.</p>
 						</div>
 					</div>
 				</div>
@@ -164,6 +164,21 @@
 
 	function openNav() {
 		$(".btn-mobile-menu").css('margin-left','0px');
+	}
+
+	function openSection(index) {
+		titleList = ["Education Campaigns", "Economic Fairness", "Environmental Justice", "Immigration Reform"];
+		descList = [];
+		descList[0] =  "The Black Institute seeks for all students to receive quality public education. Quality public education consists of great educators, participative parents, outstanding principals, holistic and integrated curriculums, safe learning environments, and the expectation and treatment of all students as scholars.";
+		descList[1] = "Economic Fairness for people of color consists of the capacity of all people to earn a decent and justifiable living in justifiable work environments. It is the discourse on fair trade, entrepreneurship, developing capital, running successful innovative businesses, and attaining leadership positions in numerous industries and sectors.<br/><br/>The Black Institute aims to engage communities of color and other stakeholders in the continuous discussion on developing solutions in acquiring capital.";
+		descList[2] = "Environmental Justice stands for the fair treatment and meaningful involvement of all people regardless of race, color, national origin, or socio-economic status with respect to the development, implementation, and enforcement of environmental laws.<br/><br/>The Black Institute aims to build communities that demands for just environments suitable for maintaining and flourishing work and life.";
+		descList[3] = "Immigration Reform and issues encircling it has been a hot topic of debate in America. As a country and a city which is steadily transforming to “majority minority”, immigration issues must be discussed holistically in all levels of society, as it primarily affects the future of the country.";
+
+		$(".section-title")[0].innerHTML = titleList[index];
+		$(".section-desc p")[0].innerHTML = descList[index];
+		$('.section-links .selected').removeClass("selected");
+		$($(".section-links a")[index]).addClass("selected");
+
 	}
 
 </script>

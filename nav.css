@@ -424,7 +424,8 @@ footer {
 
 
 	.landing .content {
-		display: block;
+		/*display: block;*/
+		height: 100%;
 	}
 
 	footer {

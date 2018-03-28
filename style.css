@@ -173,19 +173,19 @@ section .index {
 }
 
 .mobile-nav-content .image-links .knowledge {
-	background: url(/images/Knowledge-Before.png);
+	background: url(images/Knowledge-Before.png);
 	background-position: 0px -60px;
 	background-size: 100%;
 }
 
 .mobile-nav-content .image-links .community {
-	background: url(/images/Community-Before.png);
+	background: url(images/Community-Before.png);
 	background-position: 0px -40px;
 	background-size: 100%;
 }
 
 .mobile-nav-content .image-links .leadership {
-	background: url(/images/Leadership-Before.png);
+	background: url(images/Leadership-Before.png);
 	background-position: 0px -60px;
 	background-size: 100%;
 }

@@ -1,4 +1,4 @@
-@import url('/nav.css');
+@import url('nav.css');
 @font-face {
 	font-family: tbiSerif;
 	src: url(fonts/BluuNext-Bold.otf);
@@ -10,7 +10,6 @@
 }
 
 body{
-	/*color: #FFFFFF;*/
 	font-family: tbiSansSerif;
 	font-size: 16px;
 }
@@ -77,22 +76,12 @@ p {
 
 .section-img {
 	margin: 20px;
-/*	font-family: 'tbiSerif';
-	font-size: 21px;*/
 }
 
 .section-img img {
 	width: 100%;
 }
 
-/*.section-img ul {
-	list-style-type: none;
-	padding: 0;
-}
-.section-img li{
-	margin: 5px;
-}
-*/
 .section-details {
 	margin: 20px;
 }
@@ -163,28 +152,32 @@ p {
 	margin: 30px 0;
 }
 
-.members-profiles img {
+.members-profiles .display img {
 	width: 100%;
 }
 
-.members-profiles .member-name {
+.members-profiles .display .member-name {
 	width: 100%;
 	font-size: 26px	;
 	margin: 10px 0 5px 0;
 }
 
-.members-profiles .member-position {
+.members-profiles .display .member-position {
 	width: 100%;
 	font-size: 18px	;
 	margin-bottom: 10px;
 }
 
-.members-profiles .member-contact {
+.members-profiles .display .member-contact {
 	width: 100%;
 	font-size: 16px;
 	font-style: italic;
 	font-weight: 400;
 	margin: 0;
+}
+
+.modal {
+	display: none;
 }
 
 .careers {

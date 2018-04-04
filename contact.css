@@ -4,6 +4,14 @@
 .landing-content {
 	width: 90%;
 	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-row-gap: 50px;
+	grid-template-rows: minmax(auto, auto);
+
 }
 
 .contact form label {
@@ -19,6 +27,7 @@
 .form-footer {
 	display:block;
 	width: 100%;
+	margin-top: 10px;
 }
 
 .form-footer .social-media {
@@ -43,8 +52,6 @@
 	display: inline-block;
 	padding: 10px;
 
-	float: right;
-
     color: black;
     background-color: transparent;
     font-weight: bold;
@@ -52,6 +59,10 @@
     border: none;
     border: 1px solid black;
     border-radius: 3px;
+}
+
+.btn-submit {
+	float: right;
 }
 
 .donate-amount {
@@ -69,18 +80,30 @@
 	border: 1px black solid;
 }
 
+.btn-paypal {
+	margin-top: 20px;
+	text-align: right;
+}
+
 
 @media screen and (min-width: 650px) {
 
-/*	.social-media{ 
-		width: 80%; 
-		margin:auto;
-	}*/
+}
+
+@media screen and (min-width: 768px){
+
+	.landing-content {
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 50px;
+	}
 
 }
 
-@media screen and (min-width: 768px){}
+@media screen and (min-width: 1025px) {
 
-@media screen and (min-width: 1025px) {}
+	.social-media {
+		padding: 0; 
+	}
+}
 
 @media screen and (max-height: 746px and min-width: 650px){}

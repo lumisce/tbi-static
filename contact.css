@@ -1,0 +1,86 @@
+@import url('nav.css');
+@import url('article.css');
+
+.landing-content {
+	width: 90%;
+	margin: auto;
+}
+
+.contact form label {
+	display: block; 
+	margin: 10px 0;
+}
+
+.contact form input,
+.contact form textarea {
+	width: 100%;
+}
+
+.form-footer {
+	display:block;
+	width: 100%;
+}
+
+.form-footer .social-media {
+	display:inline-block;
+}
+
+.form-footer .social-media ul {
+	padding: 0;
+	margin: 0;
+}
+
+.form-footer .social-media li {
+	display: inline-block;
+}
+
+.form-footer .social-media img {
+	width: 30px;
+	margin-top: 10px;
+}
+
+.btn{
+	display: inline-block;
+	padding: 10px;
+
+	float: right;
+
+    color: black;
+    background-color: transparent;
+    font-weight: bold;
+
+    border: none;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.donate-amount {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr
+}
+
+.donate-amount .btn-donate {
+	margin: 5px;
+	padding: 10px;
+	font-weight: bold;
+
+	background: black;
+	color: white;
+	border: 1px black solid;
+}
+
+
+@media screen and (min-width: 650px) {
+
+/*	.social-media{ 
+		width: 80%; 
+		margin:auto;
+	}*/
+
+}
+
+@media screen and (min-width: 768px){}
+
+@media screen and (min-width: 1025px) {}
+
+@media screen and (max-height: 746px and min-width: 650px){}

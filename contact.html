@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Black Institute</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+	<section class="index landing">
+		<div class="container">
+			<div class="content">
+				<div class="top-header">
+					<div class="top-header-content">
+						<div class="logo">
+							<a href="index.html"><h1>T.B.I.</h1></a>
+							<h2>Leadership</h2>
+						</div>
+						<nav class="desktop-nav">
+							<ul>
+								<li><a href="about.html">About Our Organization</a></li>
+								<li><a href="">Donate / Contact Us</a></li>
+							</ul>
+						</nav>
+						<a class="mobile-nav-toggle" href="javascript:void(0)" class="openbtn" onclick="openNav()">
+							Menu
+						</a>
+					</div>
+				</div>
+
+				<div class="landing-content">
+					<div class="contact">
+						<form action="">
+							<label for="name">Name</label>
+							<input type="text" id="name" name="name">
+
+							<label for="email">Email</label>
+							<input type="text" id="email" name="email">
+
+							<label for="message">Message</label>
+							<textarea id="message" name="message" rows="10"></textarea>
+							
+							<div class="form-footer">
+								<div class="social-media">
+									<ul>
+										<li><a href=""><img src="images/icons/facebook.svg" alt="FB"></a></li>
+										<li><a href=""><img src="images/icons/twitter.svg" alt="Twitter"></a></li>
+										<li><a href=""><img src="images/icons/google.svg" alt="Google+"></a></li>
+										<li><a href=""><img src="images/icons/pinterest.svg" alt="Pinterest"></a></li>
+									</ul>
+								</div>
+								<button class="btn btn-submit">Submit</button>
+							</div>
+						</form>
+					</div>
+					<div class="donate">
+						<div class="donate-desc">
+							<h1>Please Support Our Mission</h1>
+							<p> With your support we can bring justice to communities of color. Every contribution helps, please donate today.</p>
+							<p> To donate by check, please mail to: <br/>
+								The Black Institute, 39 Broadway, Suite 1740, New York, NY 10006.
+							</p>
+						</div>
+						<div class="donate-amount">
+							<button class="btn-donate">$5</button>
+							<button class="btn-donate">$10</button>
+							<button class="btn-donate">$15</button>
+							<button class="btn-donate">$20</button>
+							<button class="btn-donate">$25</button>
+							<button class="btn-donate">$50</button>
+							<button class="btn-donate">$100</button>
+							<button class="btn-donate">Other Amt.</button>
+						</div>
+						<div class="btn-paypal">
+							<button class="btn btn-paypal">Proceed to PayPal</button>
+						</div>
+					</div>
+				</div>
+
+				<footer>
+					<div class="footer-content">
+						<div class="footer-item logo">
+							<img src="images/logo-footer.png" alt="The Black Institute">
+						</div>
+						<div class="footer-item details">
+							39 Broadway Avenue <br />
+							17th Floor, Suite 1740 <br />
+							New York, New York 10006
+						</div>
+						<div class="footer-item details">
+							Phone (212) 871-6899 <br />
+							Fax (917) 591-5281 <br />
+							info@theblackinstitute.com
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</section>
+
+</body>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script>
+	function closeNav() {
+		$(".btn-mobile-menu").css('margin-left','425px');
+	}
+
+	function openNav() {
+		$(".btn-mobile-menu").css('margin-left','0px');
+	}
+
+	function openSection(index) {
+		titleList = ["Education Campaigns", "Economic Fairness", "Environmental Justice", "Immigration Reform"];
+		descList = [];
+		descList[0] =  "The Black Institute seeks for all students to receive quality public education. Quality public education consists of great educators, participative parents, outstanding principals, holistic and integrated curriculums, safe learning environments, and the expectation and treatment of all students as scholars.";
+		descList[1] = "Economic Fairness for people of color consists of the capacity of all people to earn a decent and justifiable living in justifiable work environments. It is the discourse on fair trade, entrepreneurship, developing capital, running successful innovative businesses, and attaining leadership positions in numerous industries and sectors.<br/><br/>The Black Institute aims to engage communities of color and other stakeholders in the continuous discussion on developing solutions in acquiring capital.";
+		descList[2] = "Environmental Justice stands for the fair treatment and meaningful involvement of all people regardless of race, color, national origin, or socio-economic status with respect to the development, implementation, and enforcement of environmental laws.<br/><br/>The Black Institute aims to build communities that demands for just environments suitable for maintaining and flourishing work and life.";
+		descList[3] = "Immigration Reform and issues encircling it has been a hot topic of debate in America. As a country and a city which is steadily transforming to “majority minority”, immigration issues must be discussed holistically in all levels of society, as it primarily affects the future of the country.";
+
+		$(".section-title")[0].innerHTML = titleList[index];
+		$(".section-desc p")[0].innerHTML = descList[index];
+		$('.section-links .selected').removeClass("selected");
+		$($(".section-links a")[index]).addClass("selected");
+
+	}
+
+</script>
+</html>
